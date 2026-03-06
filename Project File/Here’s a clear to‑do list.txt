@@ -1,0 +1,70 @@
+Here’s a clear **to‑do list** for your algebra engine project, based on everything we’ve discussed so far:
+
+---
+
+### 🧩 Core Data Structures
+- [ ] **Finalize `Element` class**: holds coefficient, variable, power.  
+- [ ] **Finalize `Block` class**: acts like brackets, grouping Elements/Operators.  
+- [ ] **Implement `__eq__`, `__hash__`** for canonical comparisons and set/dict usage.  
+- [ ] Ensure immutability or controlled mutation for safe hashing.
+
+---
+
+### 🔑 Arithmetic Operations
+- [ ] Define `__add__`, `__sub__`, `__mul__`, `__truediv__` for `Block`.  
+- [ ] Enforce rules: only valid when expressions/powers match, otherwise raise exception.  
+- [ ] Return simplified `Element` or `Block` as appropriate.
+
+---
+
+### ⚙️ Simplification Pipeline
+- [ ] **`Block.simplify()`**:  
+  - Combine like terms (same variable/power).  
+  - Simplify constants.  
+  - Remove zero terms.  
+  - Flatten nested Blocks.  
+- [ ] Implement **operator precedence loop**: handle `Mul/Div` first, then `Add/Sub`.  
+- [ ] Add recursive simplification for nested Blocks.
+
+---
+
+### 🧮 Higher‑Order Procedures
+- [ ] **Factorization**: detect products of sums, quadratic forms.  
+- [ ] **Expansion**: expand brackets into polynomial form.  
+- [ ] **Classification**: detect linear/quadratic/higher order.  
+- [ ] **Solving**: apply appropriate method (isolation, quadratic formula, numeric).
+
+---
+
+### 📚 Workflow Layer
+- [ ] Build **ProcedurePipeline**:  
+  - Runs `simplify → factorize → expand → classify → solve` in ascending difficulty.  
+  - Records each attempt as a `Step` (before/after).  
+- [ ] Ensure “no change” steps are recorded for pedagogical clarity.
+
+---
+
+### 🛠️ Utilities
+- [ ] **Parser**: convert raw string → tokens → AST → Blocks.  
+- [ ] **check_types utility**: reusable helper for type validation.  
+- [ ] **merge_elements helper**: merge Elements with same variable/power.  
+- [ ] **canonicalization helper**: use `__hash__` to merge duplicate Blocks.
+
+---
+
+### 🚀 Stretch Goals
+- [ ] Add renderer classes for step‑tracing (pretty display of Steps).  
+- [ ] Semantic tagging for pedagogical workflows.  
+- [ ] Modular orchestration: separate math objects from workflow logic.
+
+---
+
+### ⚡ Key Insight
+Think of it as **three layers**:
+1. **Math objects** (Element, Block) → know how to transform themselves.  
+2. **Procedures** (simplify, factorize, expand) → wrap math logic with checks.  
+3. **Workflow** (pipeline, steps) → decides when to apply procedures and records the story.
+
+---
+
+Ryan, would you like me to **prioritize this list into immediate next steps** (like “finish Block.simplify, then parser, then pipeline”) so you have a clear roadmap for coding order?
