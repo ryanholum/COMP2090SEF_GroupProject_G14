@@ -5,7 +5,15 @@ This project has the following aims:
 3. showing the steps for them
 
 This project is divided into four modules:
-1. Main
-2. Events
-3. GUI
-4. Math_Generating
+1. main
+2. Main Page UI
+3. Quiz Page UI
+4. Math Generator
+
+To use this app, 
+doownload all files into one folder
+open the main file and run it.
+
+reminder:
+always choose the difficulty to start the quiz
+always press submit after finishing the quiz to check score and correct answer
