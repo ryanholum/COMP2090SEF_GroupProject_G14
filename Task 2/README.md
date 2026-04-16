@@ -26,3 +26,5 @@ Make sure tkinder is installed properly.
 
 JSON file not found.
 Make sure JSON file is in same folder as “UI.py” and “main.py”.
+
+Link for introduction video: https://1drv.ms/v/c/0d5d1a08299256c6/IQCMrNOi2iO-QotNdDfCIXRpAdy21Ca4AODla0VYBhFDJWc?e=TFREz9
