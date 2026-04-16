@@ -17,3 +17,7 @@ open the main file and run it.
 reminder:
 always choose the difficulty to start the quiz
 always press submit after finishing the quiz to check score and correct answer
+
+Link to demonstration video:
+https://drive.google.com/drive/folders/1xFxguhNQADoxC0wif8jagRhNOC_ZrtW3?usp=drive_link
+
