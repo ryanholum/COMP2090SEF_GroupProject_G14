@@ -1,8 +1,7 @@
 Group 14
 This project has the following aims:
 1. generate random math questions for student to practice
-2. time counting
-3. showing the steps for them
+2. show the answers and score
 
 This project is divided into four modules:
 1. main
